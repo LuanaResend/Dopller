@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+
+
+body{
+    margin: 0;
+    /*background-color: #EDECEC;*/
+    background-color: conic-gradient(from 86deg at 28.62% 123.66%, #68F2BF 18.749999552965164deg, rgba(104, 242, 191, 0.00) 88.12500178813934deg), #5318BD;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+margin-top: 1%;
+width: 100vw;
+height: 66px;
+background-color: #ffffff;
+}
+
+header h1{
+color: #5318BD;
+text-align: center;
+}
+    
+
+header button{
+position: absolute;
+text-align: center;   
+width: 146px;
+height: 34px;
+background: #5318BD;
+margin-left: 80%;
+margin-top: -42px;
+outline: none;
+border-color: #edecec00;
+cursor: pointer;
+
+
+}
+header button p{
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+/*menu*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+ion-icon{
+    height: 50px; 
+    width: 50px;
+    margin-left: -20px;
+    color: #5318BD;
+}
+
+
+#checkbox, .btn  { /* Hide the checkbox input & word "Menu" in the button */
+    display: none;
+}
+
+/* Menu button - starts */
+.btn {
+    display: block;
+    color: #fff;
+    margin-top: -55px;
+    margin-left: 10%;
+    width: 50px;
+    height: 45px;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
+/* Menu button - ends */
+
+/* Sidebar - starts */
+.sidebar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-250px);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: #747375;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.sidebar ul a li i {
+    margin-right: 15px;
+}
+
+/* Add the word "New" to the second item and "2" to the third item */
+.sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*.sidebar ul a:nth-child(2)::after {
+    content: "New";
+    background-color: tomato;
+} 
+
+.sidebar ul a:nth-child(3)::after {
+    content: "2";
+    background-color: #68f2bf;
+}*/
+
+
+
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color: #eeeeee;
+    color: #747375;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #68f2bf;
+    width: 4px;
+    height: 100%;
+}
+
+.contact ion-icon{
+    height: 20px;
+    width: 20px;
+}
+/* Sidebar - ends */
+
+/* Effect of showing the sidebar - starts */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+    width: 250px;
+    padding: 0 20px;
+}
+
+#checkbox:checked + .btn span { /* Show again the word "Menu" in the button */
+    display: inline;
+    
+}
+/* Effect of showing the sidebar - ends */
+
+

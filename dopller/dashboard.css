@@ -1,0 +1,103 @@
+body{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+.content-1{
+    text-align: left;
+    width: 95vh;
+    height: 50vh;
+    background-color: aquamarine;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    box-shadow: 1px 1px 20px #00000010;
+}
+
+.content-2{
+    text-align: left;
+    width: 95vh;
+    height: 50vh;
+    background-color: aquamarine;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    box-shadow: 1px 1px 20px #00000010;
+}
+
+.content-3 {
+    text-align: left;
+    width: 95vh;
+    height: 50vh;
+    background-color: #5318BD;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    color: #ffff;
+    box-shadow: 1px 1px 20px #00000010;
+    }
+
+
+    .content p{
+        position: absolute;
+        display: flex;
+        width: 250px;
+        height: 250px;
+        flex-direction: column;
+        color: #1f1e1e;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        
+        }
+
+section h1{
+text-align: center;
+position: absolute;
+display: block;
+color: rgb(37, 37, 37);
+font-size: 28px;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: -50px;
+margin-top: -85px;
+}
+
+section .content-2 h1{
+    text-align: center;
+    position: absolute;
+    display: block;
+    color: rgb(37, 37, 37);
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -200px;
+    margin-top: -85px;
+    }
+
+section{
+    display: block;
+}
+
+section ion-icon{
+    position: absolute;
+    display: block;
+    margin-top: 55vh;
+    margin-left: 280px;
+}
+
+
+
+
+
